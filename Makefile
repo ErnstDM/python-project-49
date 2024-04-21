@@ -16,25 +16,8 @@ publish:
 package-install:
 	python3 -m pip install --user dist/*.whl
 
+reinstall:
+	pip install --user --force-reinstall dist/*.whl
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.PHONY: install test
+brain-even:
+	poetry run brain-even
