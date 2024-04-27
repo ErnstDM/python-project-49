@@ -18,6 +18,3 @@ package-install:
 
 reinstall:
 	pip install --user --force-reinstall dist/*.whl
-
-brain-even:
-	poetry run brain-even

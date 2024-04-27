@@ -1,3 +1,4 @@
 *.рус
 .venv/
-
+__pycache__
+dist/
