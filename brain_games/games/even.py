@@ -17,7 +17,7 @@ def ask_question():
 
 
 def get_correct_answer(question):
-    return 'yes' if is_even_number(question) else 'no'
+    return "yes" if is_even_number(question) else "no"
 
 
 def is_even_number(num):
