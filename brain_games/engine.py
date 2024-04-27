@@ -32,5 +32,5 @@ def get_answer():
     return prompt.string('Your answer: ')
 
 
-def congratulations(user_name): 
+def congratulations(user_name):
     print(f'Congratulations, {user_name}!')
