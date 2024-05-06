@@ -1,33 +1,11 @@
-import prompt
+import math
 from random import randint
+RULE = 'Find the greatest common divisor of given numbers.'
 
 
-def game_rules():
-    print("Find the greatest common divisor of given number.")
-
-
-def get_answer():
-    return prompt.string("Your answer: ")
-
-
-def ask_question():
-    num1 = randint(0, 100)
-    num2 = randint(0, 100)
-    print("Question:" f"{num1} {num2}")
-    return num1, num2
-
-
-def get_correct_answer(question):
-    num1, num2 = question
-    return str(is_correct(num1, num2))
-
-
-def is_correct(num1, num2):
-    if num1 > num2:
-        x = num2
-    else:
-        x = num1
-    for i in range(1, x + 1):
-        if (num1 % i == 0) and (num2 % i == 0):
-            x = i
-    return x
+def generate_data():
+    num1 = randint(1, 50)
+    num2 = randint(1, 50)
+    question = f'{num1} {num2}'
+    right_answer = str(math.gcd(num1, num2))
+    return question, right_answer
