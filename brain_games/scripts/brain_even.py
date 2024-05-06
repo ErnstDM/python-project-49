@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import brain_games.engine as engine
+from brain_games import engine
 from brain_games.games import even
 
 

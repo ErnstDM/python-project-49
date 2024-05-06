@@ -1,4 +1,6 @@
-import brain_games.engine as engine
+#!/usr/bin/env python3
+
+from brain_games import engine
 from brain_games.games import prime
 
 
