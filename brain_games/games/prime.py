@@ -5,18 +5,14 @@ RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(number):
     if number == 1:
-        return False
+        return 'no'
     for i in range(2, int(math.sqrt(number) + 1)):
         if number % i == 0:
-            return False
-    return True
+            return 'no'
+    return 'yes'
 
 
-def generate_data():
+def get_question_and_right_answer():
     question = randint(1, 15)
-    number = question
-    if is_prime(number):
-        right_answer = 'yes'
-    else:
-        right_answer = 'no'
+    right_answer = is_prime(question)
     return question, right_answer

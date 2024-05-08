@@ -3,7 +3,7 @@ import random
 RULE = 'What is the result of the expression?'
 
 
-def generate_data():
+def get_question_and_right_answer():
     operators = ['-', '+', '*']
     num1 = randint(1, 10)
     num2 = randint(1, 10)

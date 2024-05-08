@@ -2,7 +2,7 @@ from random import randint
 RULE = 'What number is missing in the progression?'
 
 
-def generate_data():
+def get_question_and_right_answer():
     stop = randint(50, 100)
     step = randint(1, 5)
     result = list(range(randint(0, 9), stop, step))[: 5]
